@@ -1,0 +1,14 @@
+MVIT:
+  DROPPATH_RATE: 0.1
+  DEPTH: 10
+  DIM_MUL: [[1, 2.0], [3, 2.0], [8, 2.0]]
+  HEAD_MUL: [[1, 2.0], [3, 2.0], [8, 2.0]]
+  POOL_KVQ_KERNEL: [3, 3]
+  POOL_KV_STRIDE_ADAPTIVE: [4, 4]
+  POOL_Q_STRIDE: [[0, 1, 1], [1, 2, 2], [2, 1, 1], [3, 2, 2], [4, 1, 1], [5, 1, 1], [6, 1, 1], [7, 1, 1], [8, 2, 2], [9, 1, 1]]
+TEST:
+  ENABLE: True
+  # CHECKPOINT_FILE_PATH: MODEL_PATH
+  CHECKPOINT_SQUEEZE_TEMPORAL: True
+TRAIN:
+  ENABLE: False
