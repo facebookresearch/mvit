@@ -116,7 +116,7 @@ class MultiScaleAttention(nn.Module):
         self.num_heads = num_heads
         self.dim_out = dim_out
         head_dim = dim_out // num_heads
-        self.scale = head_dim ** -0.5
+        self.scale = head_dim**-0.5
         self.has_cls_embed = has_cls_embed
         padding_q = [int(q // 2) for q in kernel_q]
         padding_kv = [int(kv // 2) for kv in kernel_kv]
