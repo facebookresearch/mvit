@@ -11,7 +11,7 @@ MViT is a multiscale transformer which serves as a general vision backbone for d
 
 > **Image Classification**: Included in this repo.
 
-> **Object Detection and Instance Segmentation**: Coming soon!
+> **Object Detection and Instance Segmentation**: See [MViTv2 in Detectron2](https://github.com/facebookresearch/detectron2/tree/main/projects/MViTv2).
 
 > **Video Action Recognition**: Will release in [PySlowFast](https://github.com/facebookresearch/SlowFast) and [PyTorchVideo](https://github.com/facebookresearch/pytorchvideo).
 
