@@ -1,4 +1,5 @@
 # [MViTv2: Improved Multiscale Vision Transformers for Classification and Detection](https://arxiv.org/abs/2112.01526)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mahdilamb/mvit-colab/blob/main/mvit2_demo.ipynb)
 
 Official PyTorch implementation of **MViTv2**, from the following paper:
 
