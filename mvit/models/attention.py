@@ -294,7 +294,10 @@ class MultiScaleAttention(nn.Module):
         x = attn @ v
 
         if self.residual_pooling:
-            x = x + q
+            if self.has_cls_embed:
+                x[:, :, 1:, :] += q[:, :, 1:, :]
+            else:
+                x = x + q
 
         x = x.transpose(1, 2).reshape(B, -1, self.dim_out)
         x = self.proj(x)
