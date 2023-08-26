@@ -14,7 +14,7 @@ from fvcore.common.timer import Timer
 logger = logging.get_logger(__name__)
 
 
-class ScalarMeter(object):
+class ScalarMeter:
     """
     A scalar meter uses a deque to track a series of scaler values with a given
     window size. It supports calculating the median and average values of the
@@ -65,7 +65,7 @@ class ScalarMeter(object):
         return self.total / self.count
 
 
-class TrainMeter(object):
+class TrainMeter:
     """
     Measure training stats.
     """
@@ -206,7 +206,7 @@ class TrainMeter(object):
         logging.log_json_stats(stats)
 
 
-class ValMeter(object):
+class ValMeter:
     """
     Measures validation stats.
     """
