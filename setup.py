@@ -17,7 +17,7 @@ setup(
         "opencv-python",
         "torchvision>=0.4.2",
         "Pillow",
-        "sklearn",
+        "scikit-learn",
         "fairscale",
     ],
     packages=find_packages(exclude=("configs", "tests")),
