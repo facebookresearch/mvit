@@ -6,9 +6,9 @@ import argparse
 import sys
 
 import mvit.utils.checkpoint as cu
-from engine import test, train
 from mvit.config.defaults import assert_and_infer_cfg, get_cfg
 from mvit.utils.misc import launch_job
+from vision.fair.mvit.tools.engine import test, train
 
 
 def parse_args():
