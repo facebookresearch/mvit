@@ -4,19 +4,20 @@
 
 import pprint
 
-import mvit.models.losses as losses
-import mvit.models.optimizer as optim
-import mvit.utils.checkpoint as cu
-import mvit.utils.distributed as du
-import mvit.utils.logging as logging
-import mvit.utils.metrics as metrics
-import mvit.utils.misc as misc
 import numpy as np
 import torch
-from mvit.datasets import loader
-from mvit.datasets.mixup import MixUp
+
+import vision.fair.mvit.mvit.models.losses as losses
+import vision.fair.mvit.mvit.models.optimizer as optim
+import vision.fair.mvit.mvit.utils.checkpoint as cu
+import vision.fair.mvit.mvit.utils.distributed as du
+import vision.fair.mvit.mvit.utils.logging as logging
+import vision.fair.mvit.mvit.utils.metrics as metrics
+import vision.fair.mvit.mvit.utils.misc as misc
 from mvit.models import build_model
-from mvit.utils.meters import EpochTimer, TrainMeter, ValMeter
+from vision.fair.mvit.mvit.datasets import loader
+from vision.fair.mvit.mvit.datasets.mixup import MixUp
+from vision.fair.mvit.mvit.utils.meters import EpochTimer, TrainMeter, ValMeter
 
 logger = logging.get_logger(__name__)
 
