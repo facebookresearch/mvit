@@ -1,6 +1,7 @@
 # Copyright (c) Meta Platforms, Inc. and affiliates. All Rights Reserved.
 
 """Configs."""
+
 from fvcore.common.config import CfgNode
 
 # -----------------------------------------------------------------------------
